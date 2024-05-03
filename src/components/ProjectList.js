@@ -9,7 +9,7 @@ function ProjectList({ projects }) {
       <div id="project-list">
         {projects.map((project, index) => (
           <ProjectItem
-            key={index} // Make sure to provide a unique key
+            key={project.id} // Make sure to provide a unique key
             name={project.name}
             about={project.about}
             technologies={project.technologies}
